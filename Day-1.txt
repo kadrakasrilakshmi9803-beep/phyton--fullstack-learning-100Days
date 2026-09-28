@@ -1,0 +1,229 @@
+A. FRONTEND:
+========================
+Frontend is the visual and interactive layer of a website or application that users directly see and interact with through a web browser or mobile app.
+It is also called the Client Side because it runs on the user's device (browser/mobile).
+Responsibilities of Frontend
+Displays web pages and user interface (UI)
+Accepts user input (forms, buttons, search boxes)
+Validates user input before sending it to the server
+Calls Backend APIs to fetch or send data
+Displays the response received from the backend
+Provides animations and interactive effects
+Ensures responsive design for mobile, tablet, and desktop devices
+Common Frontend Technologies
+Technology
+Purpose
+html,css,js,react
+
+Frontend Examples;
+===============================
+Login page
+Registration form
+Shopping cart
+Dashboard
+Profile page
+Online payment page
+Real-Time Example
+When you click the Login button:
+Frontend collects username and password.
+Sends them to the backend through an API.
+Waiting for the response.
+Displays either:
+Login Successful
+Invalid Username/Password
+
+B. BACKEND;
+=============================
+Backend is the server-side part of an application.
+Users cannot see it directly, but it performs all the business logic, security, data processing, and database operations.
+It acts as the brain of the application.
+Responsibilities of Backend
+Processes client requests
+Implements business logic
+Connects with databases
+Performs CRUD operations
+Authenticates and authorizes users
+Encrypts passwords and sensitive data
+Generates reports
+Sends emails and notifications
+Handles file uploads/downloads
+Returns responses to the frontend
+Common Backend Technologies
+Technology
+Purpose
+Java
+Backend Programming Language
+Spring Boot
+Java Framework
+Node.js
+JavaScript Runtime
+Python (Django/Flask)
+Backend Development
+PHP
+Web Development
+.NET
+Microsoft Backend Framework
+Go
+High-performance Backend
+Ruby on Rails
+Rapid Web Development
+
+Databases Used
+MySQL
+PostgreSQL
+Oracle
+SQL Server
+MongoDB
+Firebase
+Backend Tasks Example
+Suppose a user logs in:
+Receives username/password.
+Checks the database.
+Verifies password.
+Generates JWT Token or Session.
+Sends success/failure response.
+Real-Time Example
+In an Online Banking System:
+Checks account balance
+Validates transaction
+Transfers money
+Updates database
+Sends SMS/Email confirmation
+All these happen in the backend.
+
+C. API (Application Programming Interface):
+====================================================================
+An API is a set of rules and protocols that allows two different applications or systems to communicate and exchange data without exposing their internal implementation.
+It acts as a bridge between the Frontend and Backend or between two different software systems.
+Simple Definition
+API = Communication Bridge
+Restaurant Analogy
+
+You (Client)  →  gives order to Waiter (API)  →  Kitchen (Server) prepares food
+Kitchen       →  gives food to Waiter (API)    →  You receive your meal
+
+
+Types of APIs:
+==================================
+
+Type
+Description
+Example
+REST API
+Uses HTTP, most common
+Weather app fetching data
+SOAP API
+XML-based, used in banking
+Net banking transactions
+GraphQL
+Fetch only what you need
+Facebook, GitHub
+WebSocket API
+Real-time, two-way
+WhatsApp, Live scores
+
+ Real-Time Scenario:
+Booking a flight on MakeMyTrip:
+MakeMyTrip doesn't own airline data
+It calls IndiGo's API, Air India's API etc.
+Each airline API returns available seats & prices
+MakeMyTrip displays all results in one place
+You never saw the API — but it did all the connecting! 
+
+
+
+Storage Areas
+==============
+as part of our applications we required to store data like Customers information, or billing information, calls information...etc
+
+to store this data we required storage areas.
+
+there are 2 types of storage areas such as
+1. Temporary Storage Areas
+2. Permanent Storage Areas.
+
+1. Temporary Storage Areas
+================================
+These are the memory areas where the data will be stored temporally.
+EG: all JVM memory areas(like Heap Area,Stack Area, Method area, PC Registers, Native Method stacks). Once JVM Shutdown all these memory areas will be cleared automatically.
+
+2. Permanent Storage Areas.
+================================
+also known as persistent storage areas. Here we can store data permanently
+
+example: Files Systems, Databases, Data warehouse, Bigdata..etc
+
+
+File Management System(FMS)
+---------------------------------
+def: A File Management System is a System where data is stored in files on the operation systems, each application program must handle its own storage data, retrieval and updating. File Systems can be provided by the Local Operating System.
+
+File systems are best suitable for to store very less amount of information(like KB)
+
+example:- a library management system storing books in separate text files likes, books.txt, members.txt
+
+Limitations of File Management Systems(FMS)
+-------------------------------------------------
+1. Data Redundancy :- same data is stored in multiple files
+2. Data Inconsistency :- updates in one file may not be reflected in another.
+3. poor Data Security :- No proper accessed control.
+4. Difficult Data Retrieval : searching requires custom programs.
+5. Integrity issues :- No Constraints(eg: rollnumber uniqueness)
+6. Scalability issues : hard to manage as data grows.
+
+To overcome the above problems of File systems , we should go for databases.
+
+Database Management System
+-------------------------------
+definition: a DBMS is a Collection of Programs that enables users to create,manage, and manipulate databases.
+
+it acts as an interface between user and database.
+
+Advantages
+-------------
+1. We can store huge amounts of information in databases.
+2. Query language support is available for every database and hence we can perform database operations very easily.
+3. To access data present in the database, compulsory username and password must be required. hence data is secured.
+4. inside database data will be stored in the form of tables. While developing database table schemas, database admin follow various normalization techniques and we can implement various constraints like Unique key constraint, primary key constraints, ..etc which prevent data duplication. hence there is no chance of data inconsistency problems.
+
+Difference Between FMS and DBMS
+#
+File Management System (FMS)
+Database Management System (DBMS)
+1
+Data is stored in separate files.
+Data is stored and managed in a database.
+2
+High data redundancy may occur.
+Data redundancy can be reduced using proper database design and normalization.
+3
+Data is comparatively difficult to maintain and update.
+Data is generally easier to maintain and update using DBMS tools and queries.
+4
+Security and access control are generally limited.
+Provides authentication, authorization, roles, and access control mechanisms.
+5
+Data sharing and concurrent access are more difficult to manage.
+Multiple users can access and manage data simultaneously with concurrency control.
+6
+Relationships between data stored in separate files are not inherently managed.
+Supports relationships between tables using keys such as Primary Key and Foreign Key.
+7
+Backup and recovery are generally manual or difficult to manage.
+Provides backup and recovery mechanisms.
+8
+Data inconsistency may occur and integrity is difficult to enforce.
+Provides mechanisms to maintain data consistency and integrity using constraints and transactions.
+9
+Suitable for simple applications with limited data-management requirements.
+Suitable for small, medium, and large applications, depending on the DBMS and architecture.
+
+
+
+Q: What is the difference between a File System and a DBMS?(IQ)
+-------------------------------------------------------------
+A file system stores data in separate files and may lead to data redundancy, and security issues, A DBMS stores data in structured manner using tables, reduces redundancy, provides security, supports multiple users, and ensures data consistency and integrity.
+
+
+
+
